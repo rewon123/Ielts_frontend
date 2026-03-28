@@ -1,0 +1,207 @@
+import React from "react";
+import styled from "styled-components";
+import FullButton from "../../components/Buttons/FullButton";
+import { Link } from "react-scroll";
+// Components
+// Assets
+
+export default function Ielts() {
+  return (
+    <Wrapper id="ielts">
+      <div className="lightBg">
+        <div className="container">
+          <Advertising className="flexSpaceCenter">
+            <AddLeft>
+              <AddLeftInner>
+                <ImgWrapper className="flexCenter">
+                  <img className="radius8" src='../../../banner2.jpeg' alt="add" />
+                </ImgWrapper>
+              </AddLeftInner>
+            </AddLeft>
+            <AddRight>
+              <h4 className="font15 semiBold">A few words about company</h4>
+              <h2 className="font extraBold">Achieve High Band Scores with Expert IELTS Coaching</h2>
+              <p className="font12 semiBold" style={{ fontSize: '14px' }}>
+                Excel in IELTS preparation with targeted practice. Master IELTS writing, improve language skills, and take realistic mock tests replicating the exam format.
+              </p>
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <h2>IELTS VIP. (OFFLINE)</h2>
+                    <div className="details">
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
+                      </span>
+                      |
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
+                      </span>
+                    </div>
+                    <p className='price-text'>Price<span className="price"> ৳10,000</span></p>
+
+                    <Link to='bookClass'>
+                      <div className="buttons">
+                        <a id="contact-us-btn" className="join-now">Join Now</a>
+                      </div>
+                    </Link>
+
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <h2>IELTS VIP. (ONLINE)</h2>
+                    <div className="details">
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
+                      </span>
+                      |
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
+                      </span>
+                    </div>
+                    <p className='price-text'>Price<span className="price"> ৳7,000</span></p>
+
+                    <Link to='bookClass'>
+                      <div className="buttons">
+                        <a id="contact-us-btn" className="join-now">Join Now</a>
+                      </div>
+                    </Link>
+
+                  </div>
+                </div>
+
+              </div>
+              <div className="row" style={{ marginTop: 20 }}>
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <h2>Basic to IELTS. (OFFLINE)</h2>
+                    <div className="details">
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
+                      </span>
+                      |
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
+                      </span>
+                    </div>
+                    <p className='price-text'>Price<span className="price"> ৳15,000</span></p>
+                    <Link to='bookClass'>
+                      <div className="buttons">
+                        <a id="contact-us-btn" className="join-now">Join Now</a>
+                      </div>
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <h2>Basic to IELTS. (ONLINE)</h2>
+                    <div className="details">
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
+                      </span>
+                      |
+                      <span>
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
+                      </span>
+                    </div>
+                    <p className='price-text'>Price<span className="price"> ৳10,000</span></p>
+
+                    <Link to='bookClass'>
+                      <div className="buttons">
+                        <a id="contact-us-btn" className="join-now">Join Now</a>
+                      </div>
+                    </Link>
+
+                  </div>
+                </div>
+
+              </div>
+            </AddRight>
+          </Advertising>
+        </div>
+      </div>
+    </Wrapper>
+  );
+}
+
+const Wrapper = styled.section`
+  width: 100%;
+`;
+const HeaderInfo = styled.div`
+  @media (max-width: 860px) {
+    text-align: center;
+  }
+`;
+const Advertising = styled.div`
+  padding: 100px 0;
+  margin: 100px 0;
+  position: relative;
+  @media (max-width: 1160px) {
+    padding: 60px 0 40px 0;
+  }
+  @media (max-width: 860px) {
+    flex-direction: column;
+    padding: 0 0 30px 0;
+    margin: 80px 0 0px 0;
+  }
+`;
+const ButtonsRow = styled.div`
+  @media (max-width: 860px) {
+    justify-content: space-between;
+  }
+`;
+const AddLeft = styled.div`
+  position: relative;
+  width: 50%;
+  p {
+    max-width: 475px;
+  }
+  @media (max-width: 860px) {
+    width: 80%;
+    order: 2;
+    text-align: center;
+    h2 {
+      line-height: 3rem;
+      margin: 15px 0;
+    }
+    p {
+      margin: 0 auto;
+    }
+  }
+`;
+const AddRight = styled.div`
+  width: 50%;
+  @media (max-width: 860px) {
+    width: 80%;
+    order: 2;
+  }
+`;
+const AddLeftInner = styled.div`
+  width: 100%;
+  position: absolute;
+  top: -300px;
+  left: 0;
+  @media (max-width: 1190px) {
+    top: -250px;
+  }
+  @media (max-width: 920px) {
+    top: -200px;
+  }
+  @media (max-width: 860px) {
+    order: 1;
+    position: relative;
+    top: -60px;
+    left: 0;
+  }
+`;
+const ImgWrapper = styled.div`
+  width: 100%;
+  padding: 0 15%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  @media (max-width: 400px) {
+    padding: 0;
+  }
+`;
