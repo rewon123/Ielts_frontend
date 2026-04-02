@@ -14,15 +14,16 @@ export default function Header() {
 
       <Wrapper id="home" className="container flexSpaceCenter">
         <LeftSide className="flexCenter">
-          <div>
-            
-            <h2 className="">Study Abroad in <span style={{ color: '#ff0000',fontSize:'30px' }}>UK </span> |<span style={{ color: '#ff0000',fontSize:'30px'  }}> Australia</span>   | <span style={{ color: '#ff0000',fontSize:'30px'  }}> New Zealand </span> and<span style={{ color: '#ff0000',fontSize:'30px'  }}> Malaysia</span>   <br /> with the best <span style={{ color: '#ff0000',fontSize:'30px'  }}>IELTS </span>& <span style={{ color: '#ff0000',fontSize:'30px'  }}>PTE</span> test preparation programs in Bangladesh.</h2>
-            <HeaderP className="font13 semiBold">
-            </HeaderP>
+          <div className="">
+
+            <img src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033065/Asset_5_4x_plsbj1.png" style={{ width: '100%' }} alt="" />
             {/* <BtnWrapper> */}
-            <Link to='bookClass'>
-              <FullButton title="Book a Free Class / Consultation" />
-            </Link>
+            <div className="" style={{ width: '80%', display: 'flex', justifyContent: 'center', margin: '0 auto' }}>
+
+              <Link to='bookClass' >
+                <FullButton title="Book a Free Class / Consultation" />
+              </Link>
+            </div>
 
             {/* </BtnWrapper> */}
 
@@ -30,31 +31,31 @@ export default function Header() {
         </LeftSide>
         <RightSide>
           <ImageWrapper>
-            <Img className="radius8" src=' ../../../banner2.jpeg' alt="office" style={{ zIndex: 9, width: '80%', }} />
+            <Img className="radius8" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', paddingLeft: '50px' }} />
 
-            <DotsWrapper>
+            {/* <DotsWrapper>
               <Dots />
-            </DotsWrapper>
+            </DotsWrapper> */}
           </ImageWrapper>
-          <GreyDiv className="lightBg"></GreyDiv>
+          {/* <GreyDiv className="lightBg"></GreyDiv> */}
         </RightSide>
 
       </Wrapper>
       <div className="container">
-        <div className="cardFather">
+        <div className="cardFather" style={{ marginTop: '25px' }}>
           <Link to="ielts" spy={true} smooth={true} offset={-80}>
-            <div className="investor-card " style={{ marginRight: 10 }}> <img src='../../../src/assets/img/Asset 1@2x.png' alt='pte' /></div>
+            <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/Asset_1_2x_t69tug.png' alt='pte' /></div>
           </Link>
           <Link to="PTE" spy={true} smooth={true} offset={-80}>
-            <div className="investor-card "> <img src='../../../src/assets/img/Asset 2@2x.png' alt='pte' /></div>
+            <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775032858/WhatsApp_Image_2026-03-31_at_22.31.04_c3c2oy.jpg' alt='pte' /></div>
           </Link>
 
-          <div className="investor-card "> <img src='../../../src/assets/img/Asset 3@2x.png' alt='pte' />
+          <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_22.31.04_1_onxwcc.jpg' alt='pte' />
           </div>
-          <div className="investor-card "> <img src='../../../src/assets/img/Asset 4@2x.png' alt='pte' />
+          <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033063/Asset_3_2x_acuu0u.png' alt='pte' />
           </div>
-          {/* <div className="investor-card "> <img src='https://i.pinimg.com/736x/74/29/fb/7429fbeb9624d6c3fef68018a580b014.jpg' alt='pte' />
-          </div> */}
+          <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_22.31.03_unkkmc.jpg' alt='pte' />
+          </div>
         </div>
       </div>
     </>
@@ -90,7 +91,7 @@ const RightSide = styled.div`
   @media (max-width: 960px) {
     width: 100%;
     order: 1;
-    margin-top: 30px;
+    margin-top: 28px;
   }
 `;
 const HeaderP = styled.div`
@@ -140,11 +141,11 @@ const QuoteWrapper = styled.div`
   position: absolute;
   left: 0;
   bottom: 50px;
-  max-width: 330px;
-  padding: 30px;
+  max-width: 328px;
+  padding: 28px;
   z-index: 99;
   @media (max-width: 960px) {
-    left: 20px;
+    left: 28px;
   }
   @media (max-width: 560px) {
     bottom: -50px;
@@ -152,7 +153,7 @@ const QuoteWrapper = styled.div`
 `;
 const QuotesWrapper = styled.div`
   position: absolute;
-  left: -20px;
+  left: -28px;
   top: -10px;
 `;
 const DotsWrapper = styled.div`

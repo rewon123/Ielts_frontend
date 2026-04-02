@@ -11,13 +11,7 @@ export default function Ielts() {
       <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
-            <AddLeft>
-              <AddLeftInner>
-                <ImgWrapper className="flexCenter">
-                  <img className="radius8" src='../../../banner2.jpeg' alt="add" />
-                </ImgWrapper>
-              </AddLeftInner>
-            </AddLeft>
+
             <AddRight>
               <h4 className="font15 semiBold">A few words about company</h4>
               <h2 className="font extraBold">Achieve High Band Scores with Expert IELTS Coaching</h2>
@@ -117,6 +111,13 @@ export default function Ielts() {
 
               </div>
             </AddRight>
+            <AddLeft>
+              <AddLeftInner>
+                <ImgWrapper className="flexCenter">
+                  <img className="radius8" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_18.07.50_mdgt6e.jpg' style={{marginTop:'110px'}} alt="add" />
+                </ImgWrapper>
+              </AddLeftInner>
+            </AddLeft>
           </Advertising>
         </div>
       </div>

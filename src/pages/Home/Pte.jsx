@@ -9,6 +9,12 @@ export default function Pte() {
       <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
+            <AddLeft>
+              <AddLeftInner>
+                <ImgWrapper className="flexCenter">
+                  <StyledImg src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/pte_chchne.png" alt="add" />                                </ImgWrapper>
+              </AddLeftInner>
+            </AddLeft>
             <AddRight>
               <h4 className="font15 semiBold">A few words about company</h4>
               <h2 className="font extraBold">Crack the PTE Exam with Confidence</h2>
@@ -98,12 +104,7 @@ export default function Pte() {
 
               </div>
             </AddRight>
-            <AddLeft>
-              <AddLeftInner>
-                <ImgWrapper className="flexCenter">
-                  <StyledImg src="../../../banner2.jpeg" alt="add" />                                </ImgWrapper>
-              </AddLeftInner>
-            </AddLeft>
+
           </Advertising>
         </div>
       </div>

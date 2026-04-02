@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 import LogoIcon from "../../assets/svg/Logo";
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import FullButton from "../Buttons/FullButton";
-import Backdrop from "../elements/Backdrop";
+import Backdrop from "../Elements/Backdrop";
 
 export default function Navbar() {
   const [y, setY] = useState(window.scrollY);

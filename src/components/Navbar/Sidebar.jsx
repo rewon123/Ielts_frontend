@@ -11,9 +11,9 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <LogoIcon />
-          <h1 className="whiteColor font20" style={{ marginLeft: "15px" }}>
-            IELTS
+          <img src="../../../Asset 2.png" style={{ width: '40px' }} alt="" />
+          <h1 style={{ marginLeft: "15px" }} className="font20 whiteColor extraBold">
+            IELTS Excellence
           </h1>
         </div>
         <CloseBtn onClick={() => toggleSidebar(!sidebarOpen)} className="animate pointer">
@@ -47,7 +47,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Services
+            Ielts
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -61,7 +61,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Projects
+            Pte
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -75,7 +75,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Blog
+            English
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -89,7 +89,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Pricing
+            Free_Classes
           </Link>
         </li>
         <li className="semiBold font15 pointer">
@@ -103,7 +103,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Contact
+            study Study_Abroad
           </Link>
         </li>
       </UlStyle>
