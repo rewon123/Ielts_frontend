@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectBox from '../../components/Elements/ProjectBox';
 import FullButton from '../../components/Buttons/FullButton';
 import Slider from 'react-slick';
@@ -13,34 +13,46 @@ const Stories = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState("");
 
+
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => setIsMobile(window.innerWidth < 768);
+        handleResize(); // check on mount
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     const sliderData = [
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/655729662_122185764974596608_4327045190827223078_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=108&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=z2v1NyGY4SQQ7kNvwErcZgt&_nc_oc=AdpjBbCPItObWJYa7jKFmFW-8iPYyZTZRD4aT7cV1hk9oODM5auHDAAZ3b88Cf_Z4qE&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=qOcjQgndMN24arSTu4kUGQ&_nc_ss=7a32e&oh=00_Afy6clionSyyRnj4VwpvH1uP7IA368lCMs-BFb9mdQJDtw&oe=69CD68B0",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127305/nahian_lzs3aj.png",
             alt: "Client Logo 1",
             link: "https://example.com/client1"
         },
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/657090093_122185764932596608_2232282563548476093_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=102&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=rWpZGqtEu5gQ7kNvwFP0YpQ&_nc_oc=AdoYyvpisVJaokKp2HR5hWINInE4uylluiprJd12OAj1gDxA-EaryIyrAzctFcykWg4&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=qOcjQgndMN24arSTu4kUGQ&_nc_ss=7a32e&oh=00_AfxWSxNZBcdk5UzIq0aIVfkDzncFn2klvQf6-4wySgoovA&oe=69CD4E30",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127306/istiak_v4_vazzdb.png",
             alt: "Client Logo 2",
             link: "https://example.com/client2"
         },
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/658928585_122185764884596608_8214110532182300650_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=103&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=FDohgcBvCwsQ7kNvwF0P-Us&_nc_oc=AdryHIYHgm1D0AJQ9WjW1l2zl1L707MbQ40eLK-hENlmcARarbHk9fAjhH3LI1yQcyw&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=qOcjQgndMN24arSTu4kUGQ&_nc_ss=7a32e&oh=00_Afx0i_b7o-pq24fzi41AUpndibm4vi9M8ONlrzwI913tZw&oe=69CD6D84",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127316/Nasif_Bhai_visa_success_zmkim4.png",
             alt: "Client Logo 3",
             link: "https://example.com/client3"
         },
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/651751339_122184402152596608_82886878653161012_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=105&ccb=1-7&_nc_sid=a934a8&_nc_ohc=8LaeGYYHAeoQ7kNvwG9mrCK&_nc_oc=Adq30p0H3lmXati-lEjFiY4JfabNoLBW6XvtoCDg9rOid4W4eIlqAO_J8ZOmpGKjoXY&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=NOwc9FoXTOkeAwSDIkoljQ&_nc_ss=7a32e&oh=00_AfwChDuY-PFCNnMsTBx1TBqJwb3RU5DDvpbOD9aN45OUig&oe=69CD6BDC",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127365/Saif_visa_3_r5dzui.png",
             alt: "Client Logo 4",
             link: "https://example.com/client4"
         },
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/656674585_122185764842596608_927039108658723503_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=110&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=czJ_UikO6FkQ7kNvwHfQYtd&_nc_oc=AdqYdkhIcX99zwPkjhpYRPHzGwAxr7CkdxP_qbPiOJ4nCoMjCIw7p0h7Pvq2043doSU&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=qOcjQgndMN24arSTu4kUGQ&_nc_ss=7a32e&oh=00_AfzsnAwrFRiPoRExPbEMjrzlZflFUjPLn_RmnV1Cc8LJhw&oe=69CD7563",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127413/Maliha_apu_visa_success_v3_lex0wv.png",
             alt: "Client Logo 5",
             link: "https://example.com/client5"
         },
         {
-            src: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/658930656_122185764800596608_7739205142186562411_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=103&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=W5VZFR8qdtUQ7kNvwGhOfGb&_nc_oc=Adpm20IX2DwU0GrRm2zPW2ygPZKBPyJDu2zs7lPfukeQn7q9Hv_m-q597701R8uEZEM&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=qOcjQgndMN24arSTu4kUGQ&_nc_ss=7a32e&oh=00_AfwoxFZAcLRpgCKhQmHLgsXux3_U8OHHKmvzrBMbvm8Gwg&oe=69CD5E47",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127448/visa_s5sfoa.png",
             alt: "Client Logo 6",
             link: "https://example.com/client6"
         }
@@ -112,37 +124,71 @@ const Stories = () => {
     };
 
     const projectData = [
-  {
-    img: "https://scontent.fdac206-1.fna.fbcdn.net/v/t39.30808-6/641459064_122182860494596608_3284274470315279653_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=7b2446&_nc_ohc=iEumhKeRGmkQ7kNvwFYKGFh&_nc_oc=AdrJdtyyGsGvFISxzKNFGyY0_iqyGKySH4WDAsRtMIlZjrP9J2mHVMoytDylxam08z4&_nc_zt=23&_nc_ht=scontent.fdac206-1.fna&_nc_gid=UHKFx-GVOSutpRXPADdlHw&_nc_ss=7a32e&oh=00_AfxhZdlxkUuQsv-Onz3B4ls_edOUI5oAr6zBCSIjJYqAEw&oe=69C5A877",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  },
-  {
-    img: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/565935569_122168130818596608_6594623255868150008_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=107&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=Q7io_nEDAJoQ7kNvwEGl3ih&_nc_oc=AdoWQ_BZn3KCQnylq2HxYGeZg5x5Whj0Dso75ddv6vv-m9zrZKYfabyUBzPKonMghN8&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=o0GDuULLXhqgZ5hsxrbHsQ&_nc_ss=7a32e&oh=00_AfwgREr7lbiVwc6COF8D3PDnH8r989dnvRu07Tt9rIm6lw&oe=69C81DE6",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  },
-  {
-    img: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/606856798_122177196002596608_276663020039585650_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=111&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=YhxfSowD8BcQ7kNvwHXla3s&_nc_oc=AdppQafhW0vmZceVMiUWalGFVAPNfv3dC8Y0fl-e1CluCBpTqZumyvQBh-trIeDPaaw&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=-FvZsXilTmPfcE4fMeBOaA&_nc_ss=7a32e&oh=00_AfxCfgUGhCHAl9ENRz_FawdYHgO2xjB98F2mpz9mcZhc7g&oe=69C834E2",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  },
-  {
-    img: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/581491855_122171445638596608_8155458033513283846_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=108&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=CweDbRcqFWMQ7kNvwHKtXd2&_nc_oc=AdrWc7OD2Lo9keQ24aS2STtRxIckpb8lpYFx9EckP9EKVpXrFrwsiwa3p-OeQga5UCY&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=jsn9RWPQqhfuihGJFO4yHQ&_nc_ss=7a32e&oh=00_AfyL6ySy8Kq-7YSExVS6_b4yNjxSL9I-DEp2FviwA6SVMA&oe=69C83E34",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  },
-  {
-    img: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/624515903_122180491868596608_3299824039685340413_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=102&ccb=1-7&_nc_sid=a934a8&_nc_ohc=VR8Eg6j6n0EQ7kNvwE7l2cS&_nc_oc=AdoJ2tuT_jfkV9B4-boxBo_SQX8VMDgHhq0SJFIQr65F1m_QwSYTqZKSN--7zOjD0fA&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=5mKUt5bRb29dIT2X87742w&_nc_ss=7a32e&oh=00_AfxixH8nkmJh3f7VoPTyYq_ZqUBL8FZO6g_ztjx5MaFKJg&oe=69C82929",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  },
-  {
-    img: "https://scontent.fdac191-1.fna.fbcdn.net/v/t39.30808-6/631836224_122181253946596608_1785954707818079872_n.jpg?stp=dst-jpg_s552x414_tt6&_nc_cat=100&ccb=1-7&_nc_sid=5df8b4&_nc_ohc=QprcJbXGSnEQ7kNvwHgQesE&_nc_oc=AdpHFsVw2gTGYQ4nMaXFcgp6ea660hIASyzGS0jZBIHwGo_exLKggIPsFKl3-qCBKtM&_nc_zt=23&_nc_ht=scontent.fdac191-1.fna&_nc_gid=ZZgeYJnVmXWGIDxafkFMlw&_nc_ss=7a32e&oh=00_Afxrz-ycgNEsE1vSArzcd-BBia7nI6qnUpiinVjTDcl8Lw&oe=69C833CC",
-    title: "Awesome Project",
-    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
-  }
-];
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125991/fayez_bhai_wcd5hm.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125950/Md_nahid_Dhali_with_Sakib_Sir_knb7ni.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125771/Noor_Mohammad_Emon_2_pl8a60.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125682/Mrittika_vrvceh.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125646/md_jihad_chowdhury_Sakib_SIR_xavbh6.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126639/Kanika_2_ujewun.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        }
+    ];
+
+
+    const IeltsprojectData = [
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126780/Lafin_Rahman_Apu_blur_nmnirk.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126800/Shahadat_IELTS_wcjqqz.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126869/Jahidul_2_lidhpz.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126910/Mridula_Apu_nwte5d.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126936/Nahian_hcbdgc.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127120/Rezwan_qcjqvb.png",
+            title: "Awesome Project",
+            text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        }
+    ];
 
 
     return (
@@ -154,7 +200,7 @@ const Stories = () => {
 
                         <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
 
-                            {projectData.map((item, index) => (
+                            {IeltsprojectData.map((item, index) => (
                                 <div className="col-md-4" key={index}>
                                     <ProjectBox
                                         img={item.img}
@@ -173,7 +219,7 @@ const Stories = () => {
 
                         <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
 
-                              {projectData.map((item, index) => (
+                            {projectData.map((item, index) => (
                                 <div className="col-md-4" key={index}>
                                     <ProjectBox
                                         img={item.img}
