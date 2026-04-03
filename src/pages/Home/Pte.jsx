@@ -21,9 +21,9 @@ export default function Pte() {
               <p className="font12 semiBold" style={{ fontSize: '14px' }}>
                 Achieve your desired PTE score with expert-led training. Learn test-taking strategies, enhance English proficiency, and practice with interactive mock tests.                            </p>
               <div className="row">
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
-                    <h2>PTE VIP. (OFFLINE)</h2>
+                    <h2>PTE VIP .  (OFFLINE)</h2>
                     <div class="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3-6 Weeks
@@ -39,14 +39,14 @@ export default function Pte() {
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
                     <h2>PTE VIP. <br /> (ONLINE)</h2>
 
                     <div class="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 1 Months
-                        <br />
+                       | <br />
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 18 live Classes
                       </span>
                     </div>
@@ -61,7 +61,7 @@ export default function Pte() {
                 </div>
               </div>
               <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
                     <h2>Basic to PTE. (OFFLINE)</h2>
                     <div class="details">
@@ -81,7 +81,7 @@ export default function Pte() {
 
                   </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
                     <h2>Basic to PTE. (ONLINE)</h2>
                     <div class="details">

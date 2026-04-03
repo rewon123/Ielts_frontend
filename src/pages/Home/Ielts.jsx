@@ -19,14 +19,14 @@ export default function Ielts() {
                 Excel in IELTS preparation with targeted practice. Master IELTS writing, improve language skills, and take realistic mock tests replicating the exam format.
               </p>
               <div className="row">
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
                     <h2>IELTS VIP. (OFFLINE)</h2>
                     <div className="details">
                       <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
+                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months 
                       </span>
-                      |
+                      | <br />
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
                       </span>
@@ -41,14 +41,14 @@ export default function Ielts() {
 
                   </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
                     <h2>IELTS VIP. (ONLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
                       </span>
-                      |
+                      | <br />
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
                       </span>
@@ -66,14 +66,14 @@ export default function Ielts() {
 
               </div>
               <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
                     <h2>Basic to IELTS. (OFFLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
                       </span>
-                      |
+                      | <br />
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
                       </span>
@@ -86,14 +86,14 @@ export default function Ielts() {
                     </Link>
                   </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
                     <h2>Basic to IELTS. (ONLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
                       </span>
-                      |
+                      | <br />
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
                       </span>

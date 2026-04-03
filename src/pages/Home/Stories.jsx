@@ -200,16 +200,18 @@ const Stories = () => {
 
                         <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
 
-                            {IeltsprojectData.map((item, index) => (
-                                <div className="col-md-4" key={index}>
-                                    <ProjectBox
-                                        img={item.img}
-                                        title={item.title}
-                                        text={item.text}
-                                        action={() => alert("clicked")}
-                                    />
-                                </div>
-                            ))}
+                            {IeltsprojectData
+                                .slice(0, isMobile ? 1 : IeltsprojectData.length)
+                                .map((item, index) => (
+                                    <div className="col-md-4" key={index}>
+                                        <ProjectBox
+                                            img={item.img}
+                                            title={item.title}
+                                            text={item.text}
+                                            action={() => handleImageClick(item.img)}
+                                        />
+                                    </div>
+                                ))}
                         </div>
 
                     </div>
@@ -219,40 +221,19 @@ const Stories = () => {
 
                         <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
 
-                            {projectData.map((item, index) => (
-                                <div className="col-md-4" key={index}>
-                                    <ProjectBox
-                                        img={item.img}
-                                        title={item.title}
-                                        text={item.text}
-                                        action={() => alert("clicked")}
-                                    />
-                                </div>
-                            ))}
-                            {/* <div className=" col-md-4 ">
-                                <ProjectBox
-                                    img={'https://scontent.fdac206-1.fna.fbcdn.net/v/t39.30808-6/636926664_122182255652596608_1579071818636388322_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=JXFvawpzR9gQ7kNvwF56J5d&_nc_oc=Adrh-KvEWqNLK04UuZM9qpY4PRS2AjcOk8PZB8b0nuqkamp2Sy4titiV53-m_eoknhc&_nc_zt=23&_nc_ht=scontent.fdac206-1.fna&_nc_gid=-2oChMKnbT1ql3N-l0k9aQ&_nc_ss=7a32e&oh=00_Afzg_UL3mab4ADJO4fQQT0FlfemVvZMh2anIZOYiqcW8XQ&oe=69C5AC3D'}
-                                    title="Awesome Project"
-                                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                                    action={() => alert("clicked")}
-                                />
-                            </div>
-                            <div className=" col-md-4 ">
-                                <ProjectBox
-                                    img={'https://scontent.fdac206-1.fna.fbcdn.net/v/t39.30808-6/636926664_122182255652596608_1579071818636388322_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=JXFvawpzR9gQ7kNvwF56J5d&_nc_oc=Adrh-KvEWqNLK04UuZM9qpY4PRS2AjcOk8PZB8b0nuqkamp2Sy4titiV53-m_eoknhc&_nc_zt=23&_nc_ht=scontent.fdac206-1.fna&_nc_gid=-2oChMKnbT1ql3N-l0k9aQ&_nc_ss=7a32e&oh=00_Afzg_UL3mab4ADJO4fQQT0FlfemVvZMh2anIZOYiqcW8XQ&oe=69C5AC3D'}
-                                    title="Awesome Project"
-                                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                                    action={() => alert("clicked")}
-                                />
-                            </div>
-                            <div className=" col-md-4 ">
-                                <ProjectBox
-                                    img={'https://scontent.fdac206-1.fna.fbcdn.net/v/t39.30808-6/636926664_122182255652596608_1579071818636388322_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_ohc=JXFvawpzR9gQ7kNvwF56J5d&_nc_oc=Adrh-KvEWqNLK04UuZM9qpY4PRS2AjcOk8PZB8b0nuqkamp2Sy4titiV53-m_eoknhc&_nc_zt=23&_nc_ht=scontent.fdac206-1.fna&_nc_gid=-2oChMKnbT1ql3N-l0k9aQ&_nc_ss=7a32e&oh=00_Afzg_UL3mab4ADJO4fQQT0FlfemVvZMh2anIZOYiqcW8XQ&oe=69C5AC3D'}
-                                    title="Awesome Project"
-                                    text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-                                    action={() => alert("clicked")}
-                                />
-                            </div> */}
+                            {projectData
+                                .slice(0, isMobile ? 1 : projectData.length)
+                                .map((item, index) => (
+                                    <div className="col-md-4" key={index}>
+                                        <ProjectBox
+                                            img={item.img}
+                                            title={item.title}
+                                            text={item.text}
+                                            action={() => handleImageClick(item.img)}
+
+                                        />
+                                    </div>
+                                ))}
                         </div>
 
                     </div>

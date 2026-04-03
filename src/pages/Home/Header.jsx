@@ -13,32 +13,25 @@ export default function Header() {
     <>
 
       <Wrapper id="home" className="container flexSpaceCenter">
-        <LeftSide className="flexCenter">
-          <div className="">
+     
+          <div className="col-md-6 mobileMarginTop">
 
             <img src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033065/Asset_5_4x_plsbj1.png" style={{ width: '100%' }} alt="" />
             {/* <BtnWrapper> */}
             <div className="" style={{ width: '80%', display: 'flex', justifyContent: 'center', margin: '0 auto' }}>
-
               <Link to='bookClass' >
                 <FullButton title="Book a Free Class / Consultation" />
               </Link>
             </div>
+          </div>
+      
+          <div className="col-md-6 " style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
 
-            {/* </BtnWrapper> */}
+            <Img className="radius8 mobileMarginTopmin" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', paddingLeft: '25px' }} />
 
           </div>
-        </LeftSide>
-        <RightSide>
-          <ImageWrapper>
-            <Img className="radius8" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', paddingLeft: '50px' }} />
-
-            {/* <DotsWrapper>
-              <Dots />
-            </DotsWrapper> */}
-          </ImageWrapper>
           {/* <GreyDiv className="lightBg"></GreyDiv> */}
-        </RightSide>
+
 
       </Wrapper>
       <div className="container">
