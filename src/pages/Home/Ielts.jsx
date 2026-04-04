@@ -21,7 +21,7 @@ export default function Ielts() {
               <div className="row">
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2>IELTS VIP. (OFFLINE)</h2>
+                    <h2 style={{ fontSize: "100%" }}>IELTS VIP. (OFFLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months 
@@ -43,7 +43,7 @@ export default function Ielts() {
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2>IELTS VIP. (ONLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>IELTS VIP. (ONLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
@@ -68,7 +68,7 @@ export default function Ielts() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2>Basic to IELTS. (OFFLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>Basic to IELTS. (OFFLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
@@ -88,7 +88,7 @@ export default function Ielts() {
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2>Basic to IELTS. (ONLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>Basic to IELTS. (ONLINE)</h2>
                     <div className="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months

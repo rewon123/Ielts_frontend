@@ -23,7 +23,7 @@ export default function Pte() {
               <div className="row">
                 <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
-                    <h2>PTE VIP .  (OFFLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>PTE VIP .  (OFFLINE)</h2>
                     <div class="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3-6 Weeks
@@ -41,7 +41,7 @@ export default function Pte() {
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
-                    <h2>PTE VIP. <br /> (ONLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>PTE VIP.  (ONLINE)</h2>
 
                     <div class="details">
                       <span>
@@ -63,7 +63,7 @@ export default function Pte() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
-                    <h2>Basic to PTE. (OFFLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>Basic to PTE. (OFFLINE)</h2>
                     <div class="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3 Months
@@ -83,7 +83,7 @@ export default function Pte() {
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div class="pricing-box">
-                    <h2>Basic to PTE. (ONLINE)</h2>
+                    <h2  style={{ fontSize: "100%" }}>Basic to PTE. (ONLINE)</h2>
                     <div class="details">
                       <span>
                         <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3 Months
