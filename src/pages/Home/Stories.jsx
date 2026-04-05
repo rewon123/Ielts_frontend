@@ -91,6 +91,39 @@ const Stories = () => {
         ],
     };
 
+
+    const settingsmobile = {
+        infinite: true,
+        speed: 500,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
+
     const LogoWrapper = styled.div`
   width: 100%;
   height: 100%;
@@ -125,32 +158,32 @@ const Stories = () => {
 
     const projectData = [
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125991/fayez_bhai_wcd5hm.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125991/fayez_bhai_wcd5hm.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125950/Md_nahid_Dhali_with_Sakib_Sir_knb7ni.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125950/Md_nahid_Dhali_with_Sakib_Sir_knb7ni.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125771/Noor_Mohammad_Emon_2_pl8a60.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125771/Noor_Mohammad_Emon_2_pl8a60.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125682/Mrittika_vrvceh.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125682/Mrittika_vrvceh.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125646/md_jihad_chowdhury_Sakib_SIR_xavbh6.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775125646/md_jihad_chowdhury_Sakib_SIR_xavbh6.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126639/Kanika_2_ujewun.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126639/Kanika_2_ujewun.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         }
@@ -159,32 +192,32 @@ const Stories = () => {
 
     const IeltsprojectData = [
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126780/Lafin_Rahman_Apu_blur_nmnirk.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126780/Lafin_Rahman_Apu_blur_nmnirk.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126800/Shahadat_IELTS_wcjqqz.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126800/Shahadat_IELTS_wcjqqz.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126869/Jahidul_2_lidhpz.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126869/Jahidul_2_lidhpz.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126910/Mridula_Apu_nwte5d.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126910/Mridula_Apu_nwte5d.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126936/Nahian_hcbdgc.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775126936/Nahian_hcbdgc.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         },
         {
-            img: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127120/Rezwan_qcjqvb.png",
+            src: "https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775127120/Rezwan_qcjqvb.png",
             title: "Awesome Project",
             text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         }
@@ -194,47 +227,74 @@ const Stories = () => {
     return (
         <div className=''>
             <div className="">
-                <div className=" row" style={{ paddingLeft: '3%' }}>
-                    <div className="col-md-6" style={{ width: '95%' }}>
+                <div className=" " style={{ paddingLeft: '3%' }}>
+                    <div className="" style={{ width: '95%' }}>
                         <h1 style={{ marginLeft: '30px' }}>IELTS SUCCESS STORIES  </h1>
-
-                        <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
-
-                            {IeltsprojectData
-                                .slice(0, isMobile ? 1 : IeltsprojectData.length)
-                                .map((item, index) => (
-                                    <div className="col-md-4" key={index}>
-                                        <ProjectBox
-                                            img={item.img}
-                                            title={item.title}
-                                            text={item.text}
-                                            action={() => handleImageClick(item.img)}
-                                        />
-                                    </div>
+                        {!isMobile ? (<SliderWrapper>
+                            <Slider {...settings}>
+                                {IeltsprojectData.map((src, index) => (
+                                    <LogoWrapper key={index} className="flexCenter">
+                                        <ImgStyle src={src.src} alt={src.title} onClick={() => handleImageClick(src.src)} />
+                                    </LogoWrapper>
                                 ))}
-                        </div>
+                            </Slider>
+
+                            {modalOpen && (
+                                <ModalOverlay onClick={closeModal}>
+                                    <ModalImage src={selectedImage} alt="large client logo" />
+                                </ModalOverlay>
+                            )}
+                        </SliderWrapper>) : (<SliderWrapper>
+                            <Slider {...settingsmobile}>
+                                {IeltsprojectData.map((src, index) => (
+                                    <LogoWrapper key={index} className="flexCenter">
+                                        <ImgStyle src={src.src} alt={src.title} onClick={() => handleImageClick(src.src)} />
+                                    </LogoWrapper>
+                                ))}
+                            </Slider>
+
+                            {modalOpen && (
+                                <ModalOverlay onClick={closeModal}>
+                                    <ModalImage src={selectedImage} alt="large client logo" />
+                                </ModalOverlay>
+                            )}
+                        </SliderWrapper>)}
 
                     </div>
-                    <div className="col-md-6" style={{ width: '95%' }}>
+                    <div className="" style={{ width: '95%' }}>
                         <h1 style={{ marginLeft: '30px' }}>PTE SUCCESS STORIES  </h1>
 
 
-                        <div className=" textCenter col-xs-12" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }} >
-
-                            {projectData
-                                .slice(0, isMobile ? 1 : projectData.length)
-                                .map((item, index) => (
-                                    <div className="col-md-4" key={index}>
-                                        <ProjectBox
-                                            img={item.img}
-                                            title={item.title}
-                                            text={item.text}
-                                            action={() => handleImageClick(item.img)}
-
-                                        />
-                                    </div>
+                        {!isMobile ? (<SliderWrapper>
+                            <Slider {...settings}>
+                                {projectData.map((src, index) => (
+                                    <LogoWrapper key={index} className="flexCenter">
+                                        <ImgStyle src={src.src} alt={src.title} onClick={() => handleImageClick(src.src)} />
+                                    </LogoWrapper>
                                 ))}
-                        </div>
+                            </Slider>
+
+                            {modalOpen && (
+                                <ModalOverlay onClick={closeModal}>
+                                    <ModalImage src={selectedImage} alt="large client logo" />
+                                </ModalOverlay>
+                            )}
+                        </SliderWrapper>) : (<SliderWrapper>
+                            <Slider {...settingsmobile}>
+                                {projectData.map((src, index) => (
+                                    <LogoWrapper key={index} className="flexCenter">
+                                        <ImgStyle src={src.src} alt={src.title} onClick={() => handleImageClick(src.src)} />
+                                    </LogoWrapper>
+                                ))}
+                            </Slider>
+
+                            {modalOpen && (
+                                <ModalOverlay onClick={closeModal}>
+                                    <ModalImage src={selectedImage} alt="large client logo" />
+                                </ModalOverlay>
+                            )}
+                        </SliderWrapper>)}
+
 
                     </div>
                 </div>

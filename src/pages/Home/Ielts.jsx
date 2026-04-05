@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 
 export default function Ielts() {
   return (
-    <Wrapper id="ielts">
+    <Wrapper id="ielts" style={{ marginTop: '-85px' }}>
       <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
@@ -18,49 +18,15 @@ export default function Ielts() {
               <p className="font12 semiBold" style={{ fontSize: '14px' }}>
                 Excel in IELTS preparation with targeted practice. Master IELTS writing, improve language skills, and take realistic mock tests replicating the exam format.
               </p>
-              <div className="row">
+              <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2 style={{ fontSize: "100%" }}>IELTS VIP. (OFFLINE)</h2>
-                    <div className="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months 
-                      </span>
-                      | <br />
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
-                      </span>
-                    </div>
-                    <p className='price-text'>Price<span className="price"> ৳10,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
-
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/4_rhd8it.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>IELTS VIP. (ONLINE)</h2>
-                    <div className="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 2 Months
-                      </span>
-                      | <br />
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 30 IELTS Classes
-                      </span>
-                    </div>
-                    <p className='price-text'>Price<span className="price"> ৳7,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
-
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/1_axi0jd.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
 
@@ -68,45 +34,15 @@ export default function Ielts() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>Basic to IELTS. (OFFLINE)</h2>
-                    <div className="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
-                      </span>
-                      | <br />
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
-                      </span>
-                    </div>
-                    <p className='price-text'>Price<span className="price"> ৳15,000</span></p>
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/2_pbzgiw.png" style={{ width: '100%' }} alt="" />
                   </div>
+
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>Basic to IELTS. (ONLINE)</h2>
-                    <div className="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 4 Months
-                      </span>
-                      | <br />
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 55 IELTS Classes
-                      </span>
-                    </div>
-                    <p className='price-text'>Price<span className="price"> ৳10,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
-
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/3_sg89vy.png" style={{ width: '100%' }} alt="" />
                   </div>
+
                 </div>
 
               </div>
@@ -114,7 +50,7 @@ export default function Ielts() {
             <AddLeft>
               <AddLeftInner>
                 <ImgWrapper className="flexCenter">
-                  <img className="radius8" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_18.07.50_mdgt6e.jpg' style={{marginTop:'110px'}} alt="add" />
+                  <img className="radius8" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_18.07.50_mdgt6e.jpg' style={{ marginTop: '110px' }} alt="add" />
                 </ImgWrapper>
               </AddLeftInner>
             </AddLeft>

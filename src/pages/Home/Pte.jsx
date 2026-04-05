@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 
 export default function Pte() {
   return (
-    <Wrapper id="PTE">
+    <Wrapper id="PTE" style={{ marginTop: '-150px' }}>
       <div className="lightBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
@@ -20,86 +20,31 @@ export default function Pte() {
               <h2 className="font extraBold">Crack the PTE Exam with Confidence</h2>
               <p className="font12 semiBold" style={{ fontSize: '14px' }}>
                 Achieve your desired PTE score with expert-led training. Learn test-taking strategies, enhance English proficiency, and practice with interactive mock tests.                            </p>
-              <div className="row">
+              <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
-                  <div class="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>PTE VIP .  (OFFLINE)</h2>
-                    <div class="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3-6 Weeks
-                        <br />
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 18 PTE Classes
-                      </span>
-                    </div>
-                    <p class="price-text">Price<span class="price"> ৳10,000</span></p>
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
+                  <div className="pricing-box">
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392560/PTE_4_j5mtvs.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
                 <div className="col-md-6 col-xs-6">
-                  <div class="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>PTE VIP.  (ONLINE)</h2>
-
-                    <div class="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 1 Months
-                       | <br />
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 18 live Classes
-                      </span>
-                    </div>
-                    <p class="price-text">Price<span class="price"> ৳7,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
+                  <div className="pricing-box">
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_gtluly.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
+
               </div>
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
-                  <div class="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>Basic to PTE. (OFFLINE)</h2>
-                    <div class="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3 Months
-                        <br />
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 43 PTE Classes
-                      </span>
-                    </div>
-                    <p class="price-text">Price<span class="price"> ৳15,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
-
+                  <div className="pricing-box">
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_3_gcxymw.png" style={{ width: '100%' }} alt="" />
                   </div>
+
                 </div>
                 <div className="col-md-6 col-xs-6">
-                  <div class="pricing-box">
-                    <h2  style={{ fontSize: "100%" }}>Basic to PTE. (ONLINE)</h2>
-                    <div class="details">
-                      <span>
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/calendar.png" alt="Calendar Icon" /> 3 Months
-                        <br />
-                        <img decoding="async" src="https://enhanceenglishbd.com/wp-content/uploads/2024/11/presentation.png" alt="Class Icon" /> 43 PTE Classes
-                      </span>
-                    </div>
-                    <p class="price-text">Price<span class="price"> ৳10,000</span></p>
-
-                    <Link to='bookClass'>
-                      <div className="buttons">
-                        <a id="contact-us-btn" className="join-now">Join Now</a>
-                      </div>
-                    </Link>
-
+                  <div className="pricing-box">
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_2_glqsm5.png" style={{ width: '100%' }} alt="" />
                   </div>
+
                 </div>
 
               </div>

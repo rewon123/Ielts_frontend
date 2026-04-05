@@ -6,9 +6,6 @@ function App() {
 
   return (
     <>
-    
-    
-     
      
     <div className="" style={{ padding: 0, margin: 0 }}>
 

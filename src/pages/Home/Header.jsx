@@ -13,29 +13,29 @@ export default function Header() {
     <>
 
       <Wrapper id="home" className="container flexSpaceCenter">
-     
-          <div className="col-md-6 mobileMarginTop">
 
-            <img src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033065/Asset_5_4x_plsbj1.png" style={{ width: '100%' }} alt="" />
-            {/* <BtnWrapper> */}
-            <div className="" style={{ width: '80%', display: 'flex', justifyContent: 'center', margin: '0 auto' }}>
-              <Link to='bookClass' >
-                <FullButton title="Book a Free Class / Consultation" />
-              </Link>
-            </div>
+        <div className="col-md-6 mobileMarginTop">
+
+          <img src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033065/Asset_5_4x_plsbj1.png" style={{ width: '100%' }} alt="" />
+          {/* <BtnWrapper> */}
+          <div className="" style={{ width: '80%', display: 'flex', justifyContent: 'center', margin: '0 auto' }}>
+            <Link to='bookClass' >
+              <FullButton title="Book a Free Class / Consultation" />
+            </Link>
           </div>
-      
-          <div className="col-md-6 " style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+        </div>
 
-            <Img className="radius8 mobileMarginTopmin" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', paddingLeft: '25px' }} />
+        <div className="col-md-6 " style={{ display: 'flex', justifyContent: 'center' }}>
 
-          </div>
-          {/* <GreyDiv className="lightBg"></GreyDiv> */}
+          <Img className=" mobileMarginTopmin" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', height: 'auto', paddingLeft: '25px' }} />
+
+        </div>
+        {/* <GreyDiv className="lightBg"></GreyDiv> */}
 
 
       </Wrapper>
       <div className="container">
-        <div className="cardFather" style={{ marginTop: '25px' }}>
+        <div className="cardFather" style={{ marginTop: '-5px' }}>
           <Link to="ielts" spy={true} smooth={true} offset={-80}>
             <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/Asset_1_2x_t69tug.png' alt='pte' /></div>
           </Link>
@@ -65,101 +65,11 @@ const Wrapper = styled.section`
     flex-direction: column;
   }
 `;
-const LeftSide = styled.div`
-  width: 50%;
-  height: 100%;
-  @media (max-width: 960px) {
-    width: 100%;
-    order: 2;
-    margin: 50px 0;
-    text-align: center;
-  }
-  @media (max-width: 560px) {
-    margin: 80px 0 50px 0;
-  }
-`;
-const RightSide = styled.div`
-  width: 50%;
-  height: 100%;
-  @media (max-width: 960px) {
-    width: 100%;
-    order: 1;
-    margin-top: 28px;
-  }
-`;
-const HeaderP = styled.div`
-  max-width: 470px;
-  padding: 15px 0 50px 0;
-  line-height: 1.5rem;
-  @media (max-width: 960px) {
-    padding: 15px 0 50px 0;
-    text-align: center;
-    max-width: 100%;
-  }
-`;
-const BtnWrapper = styled.div`
-  max-width: 190px;
-  @media (max-width: 960px) {
-    margin: 0 auto;
-  }
-`;
-const GreyDiv = styled.div`
-  width: 30%;
-  height: 700px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  @media (max-width: 960px) {
-    display: none;
-  }
-`;
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  z-index: 9;
-  @media (max-width: 960px) {
-    width: 100%;
-    justify-content: center;
-  }
-`;
+
 const Img = styled.img`
   @media (max-width: 560px) {
     width: 80%;
     height: auto;
   }
 `;
-const QuoteWrapper = styled.div`
-  position: absolute;
-  left: 0;
-  bottom: 50px;
-  max-width: 328px;
-  padding: 28px;
-  z-index: 99;
-  @media (max-width: 960px) {
-    left: 28px;
-  }
-  @media (max-width: 560px) {
-    bottom: -50px;
-  }
-`;
-const QuotesWrapper = styled.div`
-  position: absolute;
-  left: -28px;
-  top: -10px;
-`;
-const DotsWrapper = styled.div`
-  position: absolute;
-  right: -100px;
-  bottom: 100px;
-  z-index: 2;
-  @media (max-width: 960px) {
-    right: 100px;
-  }
-  @media (max-width: 560px) {
-    display: none;
-  }
-`;
-
 
