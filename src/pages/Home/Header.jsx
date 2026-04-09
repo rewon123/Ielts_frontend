@@ -27,7 +27,7 @@ export default function Header() {
 
         <div className="col-md-6 " style={{ display: 'flex', justifyContent: 'center' }}>
 
-          <Img className=" mobileMarginTopmin" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', height: 'auto', paddingLeft: '25px' }} />
+          <Img className=" mobileMarginTopmin" src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033066/final_1_hero_image_e7hzr5.png' alt="office" style={{ zIndex: 9, width: '90%', height: '100%', paddingLeft: '25px' }} />
 
         </div>
         {/* <GreyDiv className="lightBg"></GreyDiv> */}
@@ -35,12 +35,12 @@ export default function Header() {
 
       </Wrapper>
       <div className="container">
-        <div className="cardFather" style={{ marginTop: '-5px' }}>
-          <Link to="ielts" spy={true} smooth={true} offset={-80}>
-            <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/Asset_1_2x_t69tug.png' alt='pte' /></div>
-          </Link>
+        <div className="cardFather marginTop4btn">
           <Link to="PTE" spy={true} smooth={true} offset={-80}>
             <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775032858/WhatsApp_Image_2026-03-31_at_22.31.04_c3c2oy.jpg' alt='pte' /></div>
+          </Link>
+          <Link to="ielts" spy={true} smooth={true} offset={-80}>
+            <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/Asset_1_2x_t69tug.png' alt='pte' /></div>
           </Link>
 
           <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_22.31.04_1_onxwcc.jpg' alt='pte' />

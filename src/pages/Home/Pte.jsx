@@ -19,30 +19,28 @@ export default function Pte() {
               <p className="font12 semiBold" style={{ fontSize: '14px' }}>
                 Achieve your desired PTE score with expert-led training. Learn test-taking strategies, enhance English proficiency, and practice with interactive mock tests.                            </p>
               <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-md-6 col-xs-6">
-                  <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652589/PTE_2_b3ftnq.png" style={{ width: '100%' }} alt="" />
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
+                  <div className="pricing-box" >
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775739380/Asset_6_4x_emrw6u.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
                 </div>
-                <div className="col-md-6 col-xs-6">
-                  <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652590/PTE_3_bdzr0c.png" style={{ width: '100%' }} alt="" />
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
+                  <div className="pricing-box" >
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775739377/Asset_8_4x_waioij.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
                 </div>
 
               </div>
               <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-md-6 col-xs-6">
-                  <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652589/PTE_1_rgr7x1.png" style={{ width: '100%' }} alt="" />
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
+                  <div className="pricing-box" >
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775739377/Asset_9_4x_wygwph.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
-
                 </div>
-                <div className="col-md-6 col-xs-6">
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652588/IELTS_4_vip5ho.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775739376/Asset_7_4x_pdvhz0.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
-
                 </div>
 
               </div>
@@ -58,11 +56,11 @@ export default function Pte() {
 const Wrapper = styled.section`
   width: 100%;
 `;
-const HeaderInfo = styled.div`
-  @media (max-width: 860px) {
-    text-align: center;
-  }
-`;
+// const HeaderInfo = styled.div`
+//   @media (max-width: 860px) {
+//     text-align: center;
+//   }
+// `;
 const Advertising = styled.div`
   padding: 100px 0;
   margin: 100px 0;
@@ -76,11 +74,11 @@ const Advertising = styled.div`
     margin: 80px 0 0px 0;
   }
 `;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
-  }
-`;
+// const ButtonsRow = styled.div`
+//   @media (max-width: 860px) {
+//     justify-content: space-between;
+//   }
+// `;
 const AddLeft = styled.div`
   position: relative;
   width: 50%;

@@ -15,28 +15,28 @@ export default function Ielts() {
                 Excel in IELTS preparation with targeted practice. Master IELTS writing, improve language skills, and take realistic mock tests replicating the exam format.
               </p>
               <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-md-6 col-xs-6">
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_1_bqvlpx.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775736569/Asset_5_4x_npfvwp.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
                 </div>
-                <div className="col-md-6 col-xs-6">
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_4_q9mmiz.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775736568/Asset_2_4x_jr2ppz.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
                 </div>
 
               </div>
-              <div className="row" style={{ marginTop: 20 }}>
-                <div className="col-md-6 col-xs-6">
+              <div className="row" style={{ marginTop: 20 }} >
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_2_hbzk7f.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775736568/Asset_3_4x_bbamqt.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
 
                 </div>
-                <div className="col-md-6 col-xs-6">
+                <div className="col-md-6 col-xs-6" style={{ padding: '0 5px' }}>
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_3_oag38q.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775736568/Asset_4_4x_ummjn9.png" style={{ width: '100%', borderRadius: '10px' }} alt="" />
                   </div>
 
                 </div>

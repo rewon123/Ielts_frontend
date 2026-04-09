@@ -35,34 +35,34 @@ body {
     border: 1px solid #e5e5e5;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    /* width: 100%; */
     /* padding: 20px;
 	margin: 20px; */
-    text-align: left;
-	/* height: 230px; */
+    /* text-align: left; */
+	/* height: 100%; */
 }
 
-.pricing-box .buttons .join-now {
+/* .pricing-box .buttons .join-now {
     background-color: #ff0000;
     color: #fff;
     border: none;
     font-weight: bold;
-}
-.pricing-box .price {
+} */
+/* .pricing-box .price {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #000;
-}
-.pricing-box .buttons a {
+} */
+/* .pricing-box .buttons a {
     display: inline-block;
     text-decoration: none;
     font-size: 12px;
-    padding: 5px 15px;
+    padding: 5px ;
     border-radius: 5px;
     text-align: center;
     width: 100%;
-}
+} */
 
 
 
@@ -174,5 +174,19 @@ ul{
 .mobileMarginTopmin {
   @media (max-width: 320px) {
     margin-top: -30rem;
+  }
+}
+
+
+.marginTop4btn {
+  @media (max-width: 400px) {
+    margin-top: -9rem;
+  }
+}
+
+
+.marginTop4btn {
+  @media (max-width: 300px) {
+    margin-top: -15rem;
   }
 }

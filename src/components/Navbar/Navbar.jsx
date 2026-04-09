@@ -25,13 +25,13 @@ export default function Navbar() {
     <>
       <div className="darkBg" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 10}}>
         {/* <h1>djsjdkjskdj</h1> */}
-        <div className=""style={{color:'white',display:'flex',justifyContent:'center',alignItems:'center',height:'100%'}}>
-          <h3 style={{letterSpacing:'2px'}}>📞 01333411003 | ✉️ Studyabroad@ieltsexcellence.com | 📍 Dhanmondi 32 Shukrabad Office</h3>
+        <div className=""style={{color:'white',display:'flex',justifyContent:'center',alignItems:'center',height:'100%', width:'100vw'}}>
+          <h3 style={{letterSpacing:'2px',fontSize:'.8rem'}}>📞 01333411003 | ✉️ Studyabroad@ieltsexcellence.com | 📍 Dhanmondi 32 Shukrabad Office</h3>
         </div>
       </div>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px", marginTop: '25px' } : { height: "80px", marginTop: '30px' }}>
+      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px", marginTop: '17px' } : { height: "80px", marginTop: '30px' }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src="../../../Asset 2.png" style={{ width: '40px' }} alt="" />
