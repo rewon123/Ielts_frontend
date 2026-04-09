@@ -1,9 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import FullButton from "../../components/Buttons/FullButton";
-import { Link } from "react-scroll";
-// Components
-// Assets
 
 export default function Ielts() {
   return (
@@ -21,12 +17,12 @@ export default function Ielts() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/4_rhd8it.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_1_bqvlpx.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/1_axi0jd.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_4_q9mmiz.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
 
@@ -34,13 +30,13 @@ export default function Ielts() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/2_pbzgiw.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_2_hbzk7f.png" style={{ width: '100%' }} alt="" />
                   </div>
 
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775391738/3_sg89vy.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652494/IELTS_3_oag38q.png" style={{ width: '100%' }} alt="" />
                   </div>
 
                 </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -6,6 +6,20 @@ const Form = () => {
         phone: "",
         course: ""
     });
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    // ✅ Responsive handler (BEST PRACTICE)
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const handleChange = (e) => {
         setFormData({
@@ -26,7 +40,7 @@ const Form = () => {
 
         fetch(formURL, {
             method: "POST",
-            mode: "no-cors", // Google Forms does not allow CORS
+            mode: "no-cors",
             body: data
         })
             .then(() => {
@@ -39,14 +53,26 @@ const Form = () => {
     };
 
     return (
-        <div id='bookClass' style={{ marginTop: '50px' }}>
-            <div style={styles.wrapper}>
-                <div className='container' style={styles.container}>
-                    <div className="row">
+        <div id='bookClass' style={{ marginTop: '50px', width: '100%' }}>
+            <div style={{
+                ...styles.wrapper,
+                padding: isMobile ? "50px 20px" : "80px 40px"
+            }}>
+                <div style={styles.container} className="container">
+                    <div className="row" style={{ width: "100%" }}>
+                        
+                        {/* LEFT FORM */}
                         <div className="col-md-6 col-xs-12">
-
-                            <div style={styles.formCard}>
-                                <h3 style={styles.formTitle}>Book a Free Class / Consultation</h3>
+                            <div style={{
+                                ...styles.formCard,
+                                padding: isMobile ? "25px" : "40px"
+                            }}>
+                                <h3 style={{
+                                    ...styles.formTitle,
+                                    fontSize: isMobile ? "20px" : "26px"
+                                }}>
+                                    Book a Free Class / Consultation
+                                </h3>
 
                                 <form style={styles.form} onSubmit={handleSubmit}>
                                     <input
@@ -55,23 +81,37 @@ const Form = () => {
                                         placeholder="আপনার নাম *"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        style={styles.input}
+                                        style={{
+                                            ...styles.input,
+                                            fontSize: isMobile ? "13px" : "14px",
+                                            padding: isMobile ? "12px" : "14px"
+                                        }}
                                         required
                                     />
+
                                     <input
                                         type="number"
                                         name="phone"
                                         placeholder="ফোন নাম্বার *"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        style={styles.input}
+                                        style={{
+                                            ...styles.input,
+                                            fontSize: isMobile ? "13px" : "14px",
+                                            padding: isMobile ? "12px" : "14px"
+                                        }}
                                         required
                                     />
+
                                     <select
                                         name="course"
                                         value={formData.course}
                                         onChange={handleChange}
-                                        style={styles.input}
+                                        style={{
+                                            ...styles.input,
+                                            fontSize: isMobile ? "13px" : "14px",
+                                            padding: isMobile ? "12px" : "14px"
+                                        }}
                                         required
                                     >
                                         <option value="">কোর্স নির্বাচন করুন *</option>
@@ -80,18 +120,37 @@ const Form = () => {
                                         <option>Basic</option>
                                         <option>Study Abroad</option>
                                     </select>
-                                    <button type="submit" style={styles.button}>কল বুক করুন</button>
+
+                                    <button
+                                        type="submit"
+                                        style={{
+                                            ...styles.button,
+                                            fontSize: isMobile ? "14px" : "16px",
+                                            padding: isMobile ? "12px" : "14px"
+                                        }}
+                                    >
+                                        কল বুক করুন
+                                    </button>
                                 </form>
                             </div>
                         </div>
 
-                        <div className="col-md-6">
+                        {/* RIGHT TEXT */}
+                        <div className="col-md-6 col-xs-12">
                             <div style={styles.textSection}>
-                                <h2 style={styles.heading}>
+                                <h2 style={{
+                                    ...styles.heading,
+                                    fontSize: isMobile ? "26px" : "40px",
+                                    lineHeight: isMobile ? "1.4" : "1.3"
+                                }}>
                                     ফ্রি কলে পরামর্শ নিন <br />
                                     ক্যারিয়ার কাউন্সিলরের কাছ থেকে
                                 </h2>
-                                <p style={styles.paragraph}>
+
+                                <p style={{
+                                    ...styles.paragraph,
+                                    fontSize: isMobile ? "14px" : "16px"
+                                }}>
                                     আপনি যেন সঠিক ক্যারিয়ার সিদ্ধান্ত নিতে পারেন, তার জন্য আমরা
                                     দিচ্ছি ফ্রি ক্যারিয়ার কাউন্সেলিং সাপোর্ট। ক্যারিয়ার নিয়ে আপনার
                                     বিভিন্ন প্রশ্নের উত্তর পাবেন অভিজ্ঞ ক্যারিয়ার কাউন্সেলরদের কাছ
@@ -99,6 +158,7 @@ const Form = () => {
                                 </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -107,16 +167,54 @@ const Form = () => {
 };
 
 const styles = {
-    wrapper: { background: "black", padding: "80px 40px" },
-    container: { margin: "auto", display: "flex", alignItems: "center" },
-    formCard: { background: "#f5f5f5", padding: "40px", borderRadius: "10px", boxShadow: "0 10px 30px rgba(0,0,0,0.2)" },
-    formTitle: { fontSize: "26px", marginBottom: "25px", fontWeight: "700" },
-    form: { display: "flex", flexDirection: "column", gap: "16px" },
-    input: { padding: "14px", borderRadius: "6px", border: "1px solid #dcdcdc", fontSize: "14px", outline: "none" },
-    button: { marginTop: "10px", padding: "14px", borderRadius: "6px", border: "none", background: "#9c9c9c", color: "white", fontSize: "16px", cursor: "pointer" },
-    textSection: { color: "white", marginTop: '30px' },
-    heading: { fontSize: "40px", fontWeight: "700", marginBottom: "20px", lineHeight: "1.3" },
-    paragraph: { fontSize: "16px", opacity: "0.9", lineHeight: "1.8" }
+    wrapper: {
+        background: "black"
+    },
+    container: {
+        margin: "auto",
+        display: "flex",
+        alignItems: "center",
+        flexWrap: "wrap"
+    },
+    formCard: {
+        background: "#f5f5f5",
+        borderRadius: "10px",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.2)"
+    },
+    formTitle: {
+        marginBottom: "25px",
+        fontWeight: "700"
+    },
+    form: {
+        display: "flex",
+        flexDirection: "column",
+        gap: "16px"
+    },
+    input: {
+        borderRadius: "6px",
+        border: "1px solid #dcdcdc",
+        outline: "none"
+    },
+    button: {
+        marginTop: "10px",
+        borderRadius: "6px",
+        border: "none",
+        background: "#9c9c9c",
+        color: "white",
+        cursor: "pointer"
+    },
+    textSection: {
+        color: "white",
+        marginTop: "30px"
+    },
+    heading: {
+        fontWeight: "700",
+        marginBottom: "20px"
+    },
+    paragraph: {
+        opacity: "0.9",
+        lineHeight: "1.8"
+    }
 };
 
 export default Form;

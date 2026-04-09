@@ -63,14 +63,14 @@ const Stories = () => {
         infinite: true,
         speed: 500,
         dots: true,
-        slidesToShow: 5,
+        slidesToShow: 3,
         slidesToScroll: 2,
         arrows: true,
         responsive: [
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 2,
                 },
             },
@@ -98,7 +98,7 @@ const Stories = () => {
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -133,16 +133,20 @@ const Stories = () => {
     border: 0px;
   }
 `;
+
     const ImgStyle = styled.img`
   width: 100%;
   height: 100%;
   padding: 10%;
 `;
+
+
     const SliderWrapper = styled.div`
   .slick-prev:before,
   .slick-next:before {
     color: red;
     font-size: 30px;
+
   }
 `;
 
@@ -261,7 +265,7 @@ const Stories = () => {
                         </SliderWrapper>)}
 
                     </div>
-                    <div className="" style={{ width: '95%' }}>
+                    <div className="" style={{ width: '95%',marginTop:'20px' }}>
                         <h1 style={{ marginLeft: '30px' }}>PTE SUCCESS STORIES  </h1>
 
 
@@ -308,9 +312,9 @@ const Stories = () => {
                 <div className="" >
                     <h1>VISA SUCCESS STORIES  </h1>
                     <SliderWrapper>
-                        <Slider {...settings}>
+                        <Slider {...settings} style={{ marginLeft: '10px' }}>
                             {sliderData.map((src, index) => (
-                                <LogoWrapper key={index} className="flexCenter">
+                                <LogoWrapper key={index} className="flexCenter" >
                                     <ImgStyle src={src.src} alt={src.alt} onClick={() => handleImageClick(src.src)} />
                                 </LogoWrapper>
                             ))}

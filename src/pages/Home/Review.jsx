@@ -23,7 +23,7 @@ const ReviewSlider = () => {
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -68,7 +68,7 @@ const ReviewSlider = () => {
         {!isMobile ? (
           <TestimonialSlider />
         ) : (
-          <div className="">
+          <div className="" style={{marginLeft:'10px'}}>
             <SliderWrapper>
               <Slider {...settings}>
                 <LogoWrapper className="flexCenter">

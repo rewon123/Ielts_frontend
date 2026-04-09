@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import FullButton from "../../components/Buttons/FullButton";
-import { Link } from "react-scroll";
 
 export default function Pte() {
   return (
@@ -23,12 +21,12 @@ export default function Pte() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392560/PTE_4_j5mtvs.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652589/PTE_2_b3ftnq.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_gtluly.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652590/PTE_3_bdzr0c.png" style={{ width: '100%' }} alt="" />
                   </div>
                 </div>
 
@@ -36,13 +34,13 @@ export default function Pte() {
               <div className="row" style={{ marginTop: 20 }}>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_3_gcxymw.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652589/PTE_1_rgr7x1.png" style={{ width: '100%' }} alt="" />
                   </div>
 
                 </div>
                 <div className="col-md-6 col-xs-6">
                   <div className="pricing-box">
-                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775392559/PTE_2_glqsm5.png" style={{ width: '100%' }} alt="" />
+                    <img src="https://res.cloudinary.com/dqmo9ctjb/image/upload/v1775652588/IELTS_4_vip5ho.png" style={{ width: '100%' }} alt="" />
                   </div>
 
                 </div>
