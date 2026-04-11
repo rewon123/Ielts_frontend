@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px", marginTop: '17px' } : { height: "80px", marginTop: '30px' }}>
+      <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px", marginTop: '17px' } : { height: "80px", marginTop: '22px' }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src="../../../Asset 2.png" style={{ width: '40px' }} alt="" />

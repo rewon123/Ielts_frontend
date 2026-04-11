@@ -24,6 +24,8 @@ const ReviewSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,          // ✅ ADD THIS
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -68,7 +70,7 @@ const ReviewSlider = () => {
         {!isMobile ? (
           <TestimonialSlider />
         ) : (
-          <div className="" style={{marginLeft:'10px'}}>
+          <div className="" style={{ marginLeft: '10px' }}>
             <SliderWrapper>
               <Slider {...settings}>
                 <LogoWrapper className="flexCenter">
