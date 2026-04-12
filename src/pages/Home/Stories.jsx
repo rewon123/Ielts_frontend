@@ -66,6 +66,8 @@ const Stories = () => {
         slidesToShow: 3,
         slidesToScroll: 2,
         arrows: true,
+        autoplay: true,          // ✅ ADD THIS
+        autoplaySpeed: 1700,
         responsive: [
             {
                 breakpoint: 1024,
@@ -99,6 +101,8 @@ const Stories = () => {
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
+        autoplay: true,          // ✅ ADD THIS
+        autoplaySpeed: 1700,
         responsive: [
             {
                 breakpoint: 1024,
@@ -265,7 +269,7 @@ const Stories = () => {
                         </SliderWrapper>)}
 
                     </div>
-                    <div className="" style={{ width: '95%',marginTop:'20px' }}>
+                    <div className="" style={{ width: '95%', marginTop: '20px' }}>
                         <h1 style={{ marginLeft: '30px' }}>PTE SUCCESS STORIES  </h1>
 
 

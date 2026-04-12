@@ -5,14 +5,15 @@ import { Link } from "react-scroll";
 import CloseIcon from "../../assets/svg/CloseIcon";
 import LogoIcon from "../../assets/svg/Logo";
 import FullButton from "../Buttons/FullButton";
+import { NavLink } from "react-router-dom";
 
 export default function Sidebar({ sidebarOpen, toggleSidebar }) {
   return (
     <Wrapper className="animate darkBg" sidebarOpen={sidebarOpen}>
       <SidebarHeader className="flexSpaceCenter">
         <div className="flexNullCenter">
-          <img src="../../../Asset 2.png" style={{ width: '40px' }} alt="" />
-          <h1 style={{ marginLeft: "15px" }} className="font20 whiteColor extraBold">
+          <img src="../../../Asset 4@4x.png" style={{ width: '40px' }} alt="" />
+          <h1 style={{ marginLeft: "15px", fontFamily: 'cinzel' }} className="font20 whiteColor extraBold">
             IELTS Excellence
           </h1>
         </div>
@@ -22,20 +23,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
       </SidebarHeader>
 
       <UlStyle className="flexNullCenter flexColumn">
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="home"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Home
-          </Link>
-        </li>
+
         <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
@@ -64,7 +52,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             Pte
           </Link>
         </li>
-        <li className="semiBold font15 pointer">
+        {/* <li className="semiBold font15 pointer">
           <Link
             onClick={() => toggleSidebar(!sidebarOpen)}
             activeClass="active"
@@ -77,20 +65,43 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
           >
             English
           </Link>
-        </li>
-        <li className="semiBold font15 pointer">
-          <Link
-            onClick={() => toggleSidebar(!sidebarOpen)}
-            activeClass="active"
-            className="whiteColor"
-            style={{ padding: "10px 15px" }}
-            to="pricing"
-            spy={true}
-            smooth={true}
-            offset={-60}
-          >
-            Free_Classes
-          </Link>
+        </li> */}
+        <li className="semiBold whiteColor font15 pointer">
+          <li class="nav-item dropdown semiBold font15 pointer">
+
+            <p activeClass="active" className=" dropdown-toggle" role="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false" style={{ padding: "10px 15px", textDecoration: 'none' }} to="Free_Classes" spy={true} smooth={true} offset={-80}>
+              Free Classes
+
+            </p>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+              <li class="p-3 dropend">
+                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  IELTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <NavLink to="/Freeclass/IeltsListening" style={{ textDecoration: 'none' }} onClick={() => toggleSidebar(!sidebarOpen)}>
+                    <li><a class="dropdown-item" href="">LISTENING</a></li>
+                  </NavLink>
+                  <li><a class="dropdown-item" href="#">READING</a></li>
+                  <li><a class="dropdown-item" href="#">SPEAKING</a></li>
+                  <li><a class="dropdown-item" href="#">WRITING TASK 1</a></li>
+                  <li><a class="dropdown-item" href="#">WRITING TASK 2</a></li>
+                </ul>
+              </li>
+              <li class="p-3 dropend">
+                <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PTE
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">LISTENING</a></li>
+                  <li><a class="dropdown-item" href="#">READING</a></li>
+                  <li><a class="dropdown-item" href="#">SPEAKING</a></li>
+                  <li><a class="dropdown-item" href="#">WRITING</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
         </li>
         <li className="semiBold font15 pointer">
           <Link
@@ -103,7 +114,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            study Study_Abroad
+            Study_Abroad
           </Link>
         </li>
       </UlStyle>
@@ -137,7 +148,7 @@ const CloseBtn = styled.button`
   padding: 10px;
 `;
 const UlStyle = styled.ul`
-  padding: 40px;
+  // padding: 40px;
   li {
     margin: 20px 0;
   }

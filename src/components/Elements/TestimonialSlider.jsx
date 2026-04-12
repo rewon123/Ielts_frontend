@@ -11,6 +11,8 @@ export default function TestimonialSlider() {
     dots: true,
     slidesToShow: 2.7,
     slidesToScroll: 2,
+        autoplay: true,          // ✅ ADD THIS
+    autoplaySpeed: 1700,
     arrows: true,
     responsive: [
       {

@@ -47,8 +47,13 @@ export default function Header() {
           </div>
           <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033063/Asset_3_2x_acuu0u.png' alt='pte' />
           </div>
-          <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_22.31.03_unkkmc.jpg' alt='pte' />
-          </div>
+
+
+          <Link to="bookClass" spy={true} smooth={true} offset={-80}>
+            <div className="investor-card " style={{ margin: 10 }}> <img src='https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033064/WhatsApp_Image_2026-03-31_at_22.31.03_unkkmc.jpg' alt='pte' />
+            </div>
+          </Link>
+
         </div>
       </div>
     </>

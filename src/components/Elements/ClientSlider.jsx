@@ -15,6 +15,8 @@ export default function ClientSlider() {
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 2,
+    autoplay: true,          // ✅ ADD THIS
+    autoplaySpeed: 1700,
     arrows: false,
     responsive: [
       {

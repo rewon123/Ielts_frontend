@@ -18,7 +18,7 @@ const Wrapper = styled.button`
   background-color: ${(props) => (props.border ? "transparent" : "#ff0000")};
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 10px;
   outline: none;
   text-align: center;
   color: ${(props) => (props.border ? "#707070" : "#fff")};
