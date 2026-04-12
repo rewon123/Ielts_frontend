@@ -35,7 +35,7 @@ export default function Navbar() {
       <Wrapper className="flexCenter animate whiteBg" style={y > 100 ? { height: "60px", marginTop: '16px' } : { height: "80px", marginTop: '18px' }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <img src="../../../Asset 2.png" style={{ width: '40px' }} alt="" />
+            <img src="../../../white.png" style={{ width: '40px' }} alt="" />
             <h1 style={{ marginLeft: "15px", fontFamily:'cinzel' }} className="font20 extraBold">
               IELTS Excellence
             </h1>
