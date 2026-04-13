@@ -36,7 +36,7 @@ export default function Navbar() {
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
             <img src="../../../white.png" style={{ width: '40px' }} alt="" />
-            <h1 style={{ marginLeft: "15px", fontFamily:'cinzel' }} className="font20 extraBold">
+            <h1 style={{ marginLeft: "15px", fontFamily: 'cinzel' }} className="font20 extraBold">
               IELTS Excellence
             </h1>
           </Link>
@@ -85,11 +85,19 @@ export default function Navbar() {
                     <NavLink to="/Freeclass/IeltsListening" style={{ textDecoration: 'none' }}>
                       <li><a class="dropdown-item" href="#">LISTENING</a></li>
                     </NavLink>
-
-                    <li><a class="dropdown-item" href="#">READING</a></li>
-                    <li><a class="dropdown-item" href="#">SPEAKING</a></li>
-                    <li><a class="dropdown-item" href="#">WRITING TASK 1</a></li>
-                    <li><a class="dropdown-item" href="#">WRITING TASK 2</a></li>
+                
+                    <NavLink to="/Freeclass/IeltsReading" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">READING</a></li>
+                    </NavLink>
+                    <NavLink to="/Freeclass/IeltsSpeaking" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">SPEAKING</a></li>
+                    </NavLink>
+                    <NavLink to="/Freeclass/IeltsWritingTask1" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">WRITING TASK 1</a></li>
+                    </NavLink>
+                    <NavLink to="/Freeclass/IeltsWritingTask2" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">WRITING TASK 2</a></li>
+                    </NavLink>
                   </ul>
                 </li>
                 <li class="p-3 dropend">

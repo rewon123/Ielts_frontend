@@ -49,7 +49,7 @@ export default function Contact() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-              <div className="social-links">
+              <div className="social-links"> 
                 <a href="https://www.facebook.com/IELTSExcellenceBangladesh"> <img src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" style={{width:'40px'}} alt="" /> </a>
                 <a href="https://www.youtube.com/@IELTSExcellenceBangladesh" style={{color:'red}'}}> <img src="https://images.vexels.com/media/users/3/137425/isolated/preview/f2ea1ded4d037633f687ee389a571086-youtube-icon-logo.png?w=360" style={{width:'40px'}} alt="" /> </a>
                 <a href="https://www.instagram.com/ieltsexcellence2024/"> <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" style={{width:'37px'}} alt="" /> </a>
