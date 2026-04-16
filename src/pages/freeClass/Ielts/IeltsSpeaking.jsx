@@ -5,47 +5,34 @@ import Contact from '../../../components/footer/Footer';
 const IeltsSpeaking = () => {
 
     const sections = [
+        {
+            title: "Part 1: Introduction & Personal Questions",
+            videos: [
 
-        {
-            title: "MCQ Multiple Choice Questions",
-            videos: [
-                "3JZ_D3ELwOQ",
-                "L_jWHffIx5E",
-                "RgKAFK5djSk"
+                "VSzTWPycr3o",
+                "ZqVhbdvTe1c",
+                "PHwKJHbtu4M",
+                "noJR9E5r7ak",
             ]
         },
         {
-            title: "Map Questions",
+            title: "Part 2: Cue Card ",
             videos: [
-                "hTWKbfoikeg",
-                "60ItHLz5WEA",
-                "9bZkp7q19f0"
+                "PM54QrboPR0",
+                "ZvZTtgO-D8s",
+                "lnTfVuLsCHo"
             ]
         },
         {
-            title: "Gap Filling",
+            title: "Part 3: Discussion – Detailed Questions",
             videos: [
-                "OPf0YbXqDm0",
-                "fJ9rUzIMcZQ",
-                "CevxZvSJLk8"
+                "AqFvZISLtvQ",
+                "p4S3PBeg-5M",
+                "wSq3FJDz2u8",
+                "vvyEGp5RmXo"
             ]
         },
-        {
-            title: "Matching",
-            videos: [
-                "eVTXPUF4Oz4",
-                "YQHsXMglC9A",
-                "kXYiU_JCYtU"
-            ]
-        },
-        {
-            title: "Diagram Label",
-            videos: [
-                "hLQl3WQQoQ0",
-                "ktvTqknDobU",
-                "pRpeEdMmmQ0"
-            ]
-        }
+    
     ];
 
     return (
@@ -61,7 +48,7 @@ const IeltsSpeaking = () => {
                 overflow: "hidden"
             }}>
 
-                 {/* FIXED BACKGROUND SHAPES */}
+                {/* FIXED BACKGROUND SHAPES */}
                 <div style={{
                     position: "fixed",
                     width: "180px",

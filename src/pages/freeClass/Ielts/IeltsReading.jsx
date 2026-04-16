@@ -8,57 +8,46 @@ const IeltsReading = () => {
     {
         title: "True / False / Not Given",
         videos: [
-            "8hly31xKli0",
-            "r4q6m0b6g9Y",
-            "dQw4w9WgXcQ"
+            "YlR_7coT0OE",
+            "1BN83SYY0j0",
+            "NRFcQNKAPc0"
         ]
     },
     {
-        title: "Matching Headings",
+        title: "Matching List / Headings",
         videos: [
-            "V2XK8Z8m0xA",
-            "kXYiU_JCYtU",
-            "3JZ_D3ELwOQ"
+            "m4JFC4cFcio",
+            "-zIUnAvjS6g",
+            "gHaR11Au2zc"
         ]
     },
-    {
-        title: "Matching Information",
-        videos: [
-            "L_jWHffIx5E",
-            "RgKAFK5djSk",
-            "OPf0YbXqDm0"
-        ]
-    },
-    {
-        title: "Sentence Completion",
-        videos: [
-            "fJ9rUzIMcZQ",
-            "CevxZvSJLk8",
-            "eVTXPUF4Oz4"
-        ]
-    },
-    {
-        title: "Summary Completion",
-        videos: [
-            "YQHsXMglC9A",
-            "hTWKbfoikeg",
-            "ktvTqknDobU"
-        ]
-    },
+    // {
+    //     title: "Matching Information",
+    //     videos: [
+    //         "L_jWHffIx5E",
+    //         "RgKAFK5djSk",
+    //         "OPf0YbXqDm0"
+    //     ]
+    // },
+    // {
+    //     title: "Sentence Completion",
+    //     videos: [
+    //         "fJ9rUzIMcZQ",
+    //         "CevxZvSJLk8",
+    //         "eVTXPUF4Oz4"
+    //     ]
+    // },
+    
     {
         title: "Flowchart / Diagram Completion",
         videos: [
-            "pRpeEdMmmQ0",
-            "9bZkp7q19f0",
-            "60ItHLz5WEA"
+            "4lSzvM45n5Y",
         ]
     },
     {
         title: "Short Answer Questions",
         videos: [
-            "kJQP7kiw5Fk",
-            "hLQl3WQQoQ0",
-            "3tmd-ClpJxA"
+            "RmjLg294RyQ",
         ]
     }
 ];
