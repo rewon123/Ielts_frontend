@@ -8,12 +8,15 @@ import IeltsReading from './pages/freeClass/Ielts/IeltsReading';
 import IeltsSpeaking from './pages/freeClass/Ielts/IeltsSpeaking';
 import IeltsWritingTask1 from './pages/freeClass/Ielts/IeltsWritingTask1';
 import IeltsWritingTask2 from './pages/freeClass/Ielts/IeltsWritingTask2';
+import PteListening from './pages/freeClass/Pte/PteListening';
+import PteReading from './pages/freeClass/Pte/PteReading';
+import PteWritting from './pages/freeClass/Pte/PteWritting';
+import PteSpeaking from './pages/freeClass/Pte/PteSpeaking';
 
 function App() {
 
   return (
     <>
-
       <div className="" style={{ padding: 0, margin: 0 }}>
 
         <Routes>
@@ -21,12 +24,15 @@ function App() {
           <Route path="/Freeclass/IeltsListening" element={<IeltsListening />} />
           <Route path="/Freeclass/IeltsReading" element={<IeltsReading />} />
           <Route path="/Freeclass/IeltsSpeaking" element={<IeltsSpeaking />} />
-          <Route path="/Freeclass/IeltsWrittingTask1" element={<IeltsWritingTask1 />} />
+          <Route path="/Freeclass/IeltsWritingTask1" element={<IeltsWritingTask1 />} />
           <Route path="/Freeclass/IeltsWritingTask2" element={<IeltsWritingTask2 />} />
 
 
+          <Route path="/Freeclass/PteListening" element={<PteListening />} />
+          <Route path="/Freeclass/PteReading" element={<PteReading />} />
+          <Route path="/Freeclass/PteSpeaking" element={<PteSpeaking />} />
+          <Route path="/Freeclass/PteWritting" element={<PteWritting />} />
         </Routes>
-
 
       </div>
     </>

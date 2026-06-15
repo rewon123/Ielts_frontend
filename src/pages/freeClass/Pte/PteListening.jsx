@@ -1,42 +1,73 @@
 import React from 'react';
-import Contact from '../../../components/footer/Footer';
 import Navbar from '../../../components/Navbar/Navbar';
+import Contact from '../../../components/footer/Footer';
 
-const IeltsWritingTask1 = () => {
+const PteListening = () => {
 
     const sections = [
 
         {
-            title: "Mix Chart Pie and Bar ",
-            videos: [
-                "M9VqDxcmECE",
-                "PtnWnzt8ca0",
-            ]
-        },
-        {
-            title: "Map Comparison Past vs Present ",
-            videos: [
-                "Sak74DFWw3s",
-            ]
-        },
-        {
-            title: "Process or Flow Chart",
-            videos: [
-                "q0oDCzyOkvY",
-            ]
-        },
-        {
-            title: "Table Analysis",
-            videos: [
-                "n9oOspNfUv8",
-            ]
-        },
 
+            title: "MCQ Multiple Choice Questions",
+            videos: [
+                "OTni_KXOwfs",
+            ]
+        },
+        {
+           
+            title: "Summarize Spoken Text",
+            videos: [
+                "m6g-Xa6zkfo",
+
+            ]
+        },
+        {
+            title: "Write from Dictation ",
+            videos: [
+                "gCq7PrFzQMQ",
+                "78SI9BYkggA",
+                "wOowOf3d_OM",
+
+            ]
+        },
+        {
+            title: "Highlight Incorrect Words ",
+            videos: [
+                "v3yIiQTjfcg",
+
+            ]
+        },
+       
     ];
 
     return (
-        <div style={{ background: "#FFFFFF", minHeight: "100vh" }}>
+        <div style={{ background: "#FFFFFF", minHeight: "100vh", position: "relative", zIndex: 0 }}>
             <Navbar />
+
+            {/* FIXED BACKGROUND SHAPES */}
+            <div style={{
+                position: "fixed",
+                width: "180px",
+                height: "180px",
+                background: "#FFFaf5",
+                borderRadius: "50%",
+                top: "60px",
+                left: "-60px",
+                zIndex: -1,
+                pointerEvents: "none"
+            }}></div>
+
+            <div style={{
+                position: "fixed",
+                width: "140px",
+                height: "140px",
+                background: "#FFFaf5",
+                borderRadius: "50%",
+                bottom: "-60px",
+                right: "-60px",
+                zIndex: -1,
+                pointerEvents: "none"
+            }}></div>
 
             {/* HERO SECTION */}
             <div style={{
@@ -46,31 +77,6 @@ const IeltsWritingTask1 = () => {
                 position: "relative",
                 overflow: "hidden"
             }}>
-
-                {/* FIXED BACKGROUND SHAPES */}
-                <div style={{
-                    position: "fixed",
-                    width: "180px",
-                    height: "180px",
-                    background: "#FFFaf5",
-                    borderRadius: "50%",
-                    top: "60px",
-                    left: "-60px",
-                    zIndex: -1,
-                    pointerEvents: "none"
-                }}></div>
-
-                <div style={{
-                    position: "fixed",
-                    width: "140px",
-                    height: "140px",
-                    background: "#FFFaf5",
-                    borderRadius: "50%",
-                    bottom: "-60px",
-                    right: "-60px",
-                    zIndex: -1,
-                    pointerEvents: "none"
-                }}></div>
 
                 {/* TITLE */}
                 <div style={{
@@ -91,7 +97,7 @@ const IeltsWritingTask1 = () => {
                         fontWeight: "700",
                         margin: 0
                     }}>
-                        IELTS Writing Task 1
+                        PTE Listening
                     </h1>
 
                     <div style={{
@@ -135,7 +141,7 @@ const IeltsWritingTask1 = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Listening Video"
+                                            title="IELTS Reading Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>
@@ -148,6 +154,7 @@ const IeltsWritingTask1 = () => {
                 ))}
 
             </div>
+
             {/* FOOTER */}
             <div style={{ position: "relative", zIndex: 1 }}>
                 <Contact />
@@ -155,4 +162,5 @@ const IeltsWritingTask1 = () => {
         </div>
     );
 };
-export default IeltsWritingTask1;
+
+export default PteListening;

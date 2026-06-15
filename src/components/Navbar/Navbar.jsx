@@ -135,10 +135,19 @@ export default function Navbar() {
                     PTE
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">LISTENING</a></li>
-                    <li><a class="dropdown-item" href="#">READING</a></li>
-                    <li><a class="dropdown-item" href="#">SPEAKING</a></li>
-                    <li><a class="dropdown-item" href="#">WRITING</a></li>
+                       <NavLink to="/Freeclass/PteListening" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">LISTENING</a></li>
+                    </NavLink>
+
+                    <NavLink to="/Freeclass/PteReading" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">READING</a></li>
+                    </NavLink>
+                    <NavLink to="/Freeclass/PteSpeaking" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">SPEAKING</a></li>
+                    </NavLink>
+                    <NavLink to="/Freeclass/PteWritting" style={{ textDecoration: 'none' }}>
+                      <li><a class="dropdown-item" href="#">WRITING</a></li>
+                    </NavLink>
                   </ul>
                 </li>
 
