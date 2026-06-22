@@ -180,9 +180,9 @@ export default function Navbar() {
               </Link>
             </li>
                <li className="semiBold font15 pointer" >
-              <NavLink activeClass="active" style={{ padding: "0" }} to="/tempomockL.html " spy={true} smooth={true} offset={-80}>
+              <a activeClass="active" style={{ padding: "0" }} href="/tempomockL.html" spy={true} smooth={true} offset={-80}>
                 tempomock
-              </NavLink>
+              </a>
             </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
