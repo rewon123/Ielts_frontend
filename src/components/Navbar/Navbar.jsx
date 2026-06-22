@@ -179,6 +179,11 @@ export default function Navbar() {
                 Study Abroad
               </Link>
             </li>
+               <li className="semiBold font15 pointer" >
+              <NavLink activeClass="active" style={{ padding: "0" }} to="/tempomockL.html " spy={true} smooth={true} offset={-80}>
+                tempomock
+              </NavLink>
+            </li>
           </UlWrapper>
           <UlWrapperRight className="flexNullCenter">
             <Link onClick={() => setShowModal(true)} >
