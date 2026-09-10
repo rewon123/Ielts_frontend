@@ -12,9 +12,9 @@ export default function Header() {
   return (
     <>
 
-      <Wrapper id="home" className="container flexSpaceCenter">
+      <Wrapper id="home" className="container flexSpaceCenter" style={{marginTop:'-100px'}}>
 
-        <div className="col-md-6 mobileMarginTop" style={{marginTop:'-120px'}}>
+        <div className="col-md-6 mobileMarginTop" >
 
           <img src="https://res.cloudinary.com/dgjvl9dpb/image/upload/v1775033065/Asset_5_4x_plsbj1.png" style={{ width: '100%' }} alt="" />
           {/* <BtnWrapper> */}
