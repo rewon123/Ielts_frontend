@@ -1,49 +1,61 @@
 import React from 'react';
-import Navbar from '../../../components/Navbar/Navbar';
 import Contact from '../../../components/footer/Footer';
+import Navbar from '../../../components/Navbar/Navbar';
 
 const IeltsWritingTask2 = () => {
 
     const sections = [
-
         {
-            title: "MCQ Multiple Choice Questions",
+            title: "Writing Task 2 Masterclass",
             videos: [
-                "3JZ_D3ELwOQ",
-                "L_jWHffIx5E",
-                "RgKAFK5djSk"
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
             ]
         },
         {
-            title: "Map Questions",
+            title: "Advantages and Disadvantages. Adv Outweigh Disadv?",
             videos: [
-                "hTWKbfoikeg",
-                "60ItHLz5WEA",
-                "9bZkp7q19f0"
+                "MBO42H6iclg",
+                "qj9bOG7FL5g",
+                "qj9bOG7FL5g"
             ]
         },
         {
-            title: "Gap Filling",
+            title: "Positive or Negative Development?",
             videos: [
-                "OPf0YbXqDm0",
-                "fJ9rUzIMcZQ",
-                "CevxZvSJLk8"
+                "Kl5fomwTQ-w",
+                "LsnhrVwn9uY",
+                "YDVKd7oYKz4"
             ]
         },
         {
-            title: "Matching",
+            title: "Discuss Both Views",
             videos: [
-                "eVTXPUF4Oz4",
-                "YQHsXMglC9A",
-                "kXYiU_JCYtU"
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
             ]
         },
         {
-            title: "Diagram Label",
+            title: "Agree or Disagree",
             videos: [
-                "hLQl3WQQoQ0",
-                "ktvTqknDobU",
-                "pRpeEdMmmQ0"
+                "bzOgw93lf8k",
+            ]
+        },
+        {
+            title: "Problem-Solution",
+            videos: [
+                "Sf8IRTsgHqo",
+                "JjLMuIiXxzI",
+                "yMtQbgpXctw"
+            ]
+        },
+        {
+            title: "Double Question",
+            videos: [
+                "8Qz4jUfAOLM",
+                "c04GF9ih8D4",
             ]
         }
     ];
@@ -60,7 +72,6 @@ const IeltsWritingTask2 = () => {
                 position: "relative",
                 overflow: "hidden"
             }}>
-
 
                 {/* FIXED BACKGROUND SHAPES */}
                 <div style={{
@@ -150,7 +161,7 @@ const IeltsWritingTask2 = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Listening Video"
+                                            title="IELTS Writing Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>

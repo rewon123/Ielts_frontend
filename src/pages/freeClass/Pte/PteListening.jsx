@@ -5,39 +5,70 @@ import Contact from '../../../components/footer/Footer';
 const PteListening = () => {
 
     const sections = [
-
         {
-
-            title: "MCQ Multiple Choice Questions",
-            videos: [
-                "OTni_KXOwfs",
-            ]
-        },
-        {
-           
             title: "Summarize Spoken Text",
             videos: [
                 "m6g-Xa6zkfo",
-
+                "temp_id_2",
+                "temp_id_3"
             ]
         },
         {
-            title: "Write from Dictation ",
+            title: "MCQ-Multiple",
+            videos: [
+                "OTni_KXOwfs",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Fill in the Blanks",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "MCQ-Single",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Select Missing Word",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Highlight Correct Summary",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Highlight Incorrect Words",
+            videos: [
+                "v3yIiQTjfcg",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Write from Dictation",
             videos: [
                 "gCq7PrFzQMQ",
                 "78SI9BYkggA",
-                "wOowOf3d_OM",
-
+                "wOowOf3d_OM"
             ]
-        },
-        {
-            title: "Highlight Incorrect Words ",
-            videos: [
-                "v3yIiQTjfcg",
-
-            ]
-        },
-       
+        }
     ];
 
     return (
@@ -141,7 +172,7 @@ const PteListening = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Reading Video"
+                                            title="PTE Listening Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>

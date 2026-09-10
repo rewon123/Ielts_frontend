@@ -5,69 +5,62 @@ import Contact from '../../../components/footer/Footer';
 const PteSpeaking = () => {
 
     const sections = [
-
         {
-
-            title: "Speaking Read Aloud",
+            title: "Read Aloud",
             videos: [
                 "-qVEFWHdi6U",
                 "ggW6CG6fPqk",
-                "zEv0X_9h1z8",
-
+                "zEv0X_9h1z8"
             ]
         },
         {
-           
-            title: "Speaking Repeat Sentence ",
+            title: "Repeat Sentence",
             videos: [
                 "J1-dVoBZB9Y",
-
+                // "temp_id_2",
+                // "temp_id_3"
             ]
         },
         {
-           
-            title: "Describe Image ",
+            title: "Describe Image",
             videos: [
                 "kVneori4uJc",
                 "Ts3DmxhgNyY",
-
+                // "temp_id_3"
             ]
         },
         {
-           
-            title: "Retell Lecture ",
+            title: "Re-Tell Lecture",
             videos: [
                 "CQPHn9qNk2s",
                 "XmV3sF_sufE",
-
+                // "temp_id_3"
             ]
         },
         {
-           
-            title: "Answer Short Question ",
+            title: "Answer Short Question",
             videos: [
                 "cYvdLe0whJY",
-
+                // "temp_id_2",
+                // "temp_id_3"
             ]
         },
         {
-           
-            title: " Summarize Group Discussion",
+            title: "Summarize Group Discussion",
             videos: [
                 "gUExLBDU994",
-
+                // "temp_id_2",
+                // "temp_id_3"
             ]
         },
         {
-           
-            title: " Respond to a Situation",
+            title: "Respond to a Situation",
             videos: [
                 "P4aj0ntkBGY",
-
+                // "temp_id_2",
+                // "temp_id_3"
             ]
-        },
-   
-       
+        }
     ];
 
     return (
@@ -171,7 +164,7 @@ const PteSpeaking = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Reading Video"
+                                            title="PTE Speaking Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>

@@ -5,9 +5,21 @@ import Contact from '../../../components/footer/Footer';
 const IeltsListening = () => {
 
     const sections = [
-
         {
-
+            title: "Masterclass",
+            videos: [
+                "fVt9gaqd9qk"
+            ]
+        },
+        {
+            title: "Orientation",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
             title: "MCQ Multiple Choice Questions",
             videos: [
                 "B9EfbsIWD1A",
@@ -19,7 +31,6 @@ const IeltsListening = () => {
             ]
         },
         {
-           
             title: "Map Questions",
             videos: [
                 "gb7Od6AWEvs",
@@ -38,7 +49,14 @@ const IeltsListening = () => {
                 "LhXLgbW56bU",
             ]
         },
-       
+        {
+            title: "Matching Section",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        }
     ];
 
     return (
@@ -142,7 +160,7 @@ const IeltsListening = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Reading Video"
+                                            title="IELTS Listening Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>

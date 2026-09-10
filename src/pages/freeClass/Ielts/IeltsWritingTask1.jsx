@@ -5,33 +5,57 @@ import Navbar from '../../../components/Navbar/Navbar';
 const IeltsWritingTask1 = () => {
 
     const sections = [
-
         {
-            title: "Mix Chart Pie and Bar ",
+            title: "Writing Task 1 Masterclass",
+            videos: [
+                "temp_id_1",
+                "temp_id_2",
+                "temp_id_3"
+            ]
+        },
+        {
+            title: "Map Comparison",
+            videos: [
+                "Sak74DFWw3s",
+                "yozGTsytPVY",
+                "_H4OVX2GiXg"
+            ]
+        },
+        {
+            title: "Pie Chart",
             videos: [
                 "M9VqDxcmECE",
                 "PtnWnzt8ca0",
+                "izrBnsdSZJg"
             ]
         },
         {
-            title: "Map Comparison Past vs Present ",
+            title: "Bar Chart",
             videos: [
-                "Sak74DFWw3s",
+                "pfdlNS_OzSk",
             ]
         },
         {
-            title: "Process or Flow Chart",
+            title: "Line Diagram",
             videos: [
-                "q0oDCzyOkvY",
+                "EK06DgTGdzs",
+                "4s-CKZjGoS8",
             ]
         },
         {
-            title: "Table Analysis",
+            title: "Process Analysis",
             videos: [
                 "n9oOspNfUv8",
             ]
         },
-
+        {
+            title: "Table",
+            videos: [
+                "n9oOspNfUv8",
+                // "yozGTsytPVY",
+                "Y5WGRgCcOPA",
+            ]
+        }
     ];
 
     return (
@@ -135,7 +159,7 @@ const IeltsWritingTask1 = () => {
                                             width="100%"
                                             height="200"
                                             src={`https://www.youtube.com/embed/${videoId}`}
-                                            title="IELTS Listening Video"
+                                            title="IELTS Writing Video"
                                             style={{ borderRadius: "10px", border: "none" }}
                                             allowFullScreen
                                         ></iframe>
@@ -155,4 +179,5 @@ const IeltsWritingTask1 = () => {
         </div>
     );
 };
+
 export default IeltsWritingTask1;

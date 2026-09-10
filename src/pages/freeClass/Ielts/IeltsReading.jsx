@@ -4,53 +4,83 @@ import Contact from '../../../components/footer/Footer';
 
 const IeltsReading = () => {
 
-   const sections = [
-    {
-        title: "True / False / Not Given",
-        videos: [
-            "YlR_7coT0OE",
-            "1BN83SYY0j0",
-            "NRFcQNKAPc0"
-        ]
-    },
-    {
-        title: "Matching List / Headings",
-        videos: [
-            "m4JFC4cFcio",
-            "-zIUnAvjS6g",
-            "gHaR11Au2zc"
-        ]
-    },
-    // {
-    //     title: "Matching Information",
-    //     videos: [
-    //         "L_jWHffIx5E",
-    //         "RgKAFK5djSk",
-    //         "OPf0YbXqDm0"
-    //     ]
-    // },
-    // {
-    //     title: "Sentence Completion",
-    //     videos: [
-    //         "fJ9rUzIMcZQ",
-    //         "CevxZvSJLk8",
-    //         "eVTXPUF4Oz4"
-    //     ]
-    // },
-    
-    {
-        title: "Flowchart / Diagram Completion",
-        videos: [
-            "4lSzvM45n5Y",
-        ]
-    },
-    {
-        title: "Short Answer Questions",
-        videos: [
-            "RmjLg294RyQ",
-        ]
-    }
-];
+    const sections = [
+        {
+            title: "Fill in the Blanks / Gap Fill",
+            videos: [
+                "7KGu-Eqyl4A",
+                "UDVUzjTsBow",
+                "tu5gM93rCW4"
+            ]
+        },
+        {
+            title: "True / False / Not Given",
+            videos: [
+                "YlR_7coT0OE",
+                "1BN83SYY0j0",
+                "NRFcQNKAPc0"
+            ]
+        },
+        {
+            title: "Yes no not given",
+            videos: [
+                "YlR_7coT0OE",
+                "4W4epygwZBE",
+                // "temp_id_3"
+            ]
+        },
+        {
+            title: "MCQ - Single, Double",
+            videos: [
+                "QEWBF98Vjb4",
+                "tu5gM93rCW4",
+                "eytbidWPS74"
+            ]
+        },
+        {
+            title: "Matching Headings",
+            videos: [
+                "m4JFC4cFcio",
+                "-zIUnAvjS6g",
+                "gHaR11Au2zc"
+            ]
+        },
+        {
+            title: "Matching List",
+            videos: [
+                "2_ro9UG8lNg",
+                "Z_5J1HVBaA4"
+            ]
+        },
+        {
+            title: "Matching Information",
+            videos: [
+                // "L_jWHffIx5E",
+                // "RgKAFK5djSk",
+                // "OPf0YbXqDm0"
+            ]
+        },
+        {
+            title: "Sentence Completion",
+            videos: [
+                // "fJ9rUzIMcZQ",
+                // "CevxZvSJLk8",
+                // "eVTXPUF4Oz4"
+            ]
+        },
+        {
+            title: "Flowchart / Diagram Completion",
+            videos: [
+                "4lSzvM45n5Y",
+            ]
+        },
+        {
+            title: "Short Answer Questions",
+            videos: [
+                "RmjLg294RyQ",
+            ]
+        }
+    ];
 
     return (
         <div style={{ background: "#FFFFFF", minHeight: "100vh", position: "relative", zIndex: 0 }}>
